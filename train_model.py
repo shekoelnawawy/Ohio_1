@@ -40,7 +40,7 @@ X_train, Y_train, X_val, Y_val, X_train_mean, X_train_stdev = data.load_data(dir
             include_missing=config['include_missing'], train_frac=config['train_frac'])
 print("data loaded.\nmean = {0}\tstdev = {1}".format(round(X_train_mean, 3), round(X_train_stdev, 3)))
 
-print(X_train)
+print(Y_train)
 # if config['model'] in ['gru', 'lstm', 'lstm_attention']:
 #     X_train = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], 1))
 #     X_val = np.reshape(X_val, (X_val.shape[0], X_val.shape[1], 1))
